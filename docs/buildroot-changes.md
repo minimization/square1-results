@@ -1,965 +1,567 @@
 # SOURCE DEPENDENCIES ADDED
-* ghc
-  * ghc-HTTP
-  * ghc-SHA
-  * ghc-attoparsec
-  * ghc-cereal
-  * ghc-hspec-core
-  * ghc-http-client
-  * ghc-http-types
-  * ghc-integer-logarithms
-  * ghc-regex-base
-  * ghc-regex-pcre
-  * ghc-streaming-commons
-  * ghc-zip-archive
-  * ghc-Glob
-  * ghc-HTTP
-  * ghc-HUnit
-  * ghc-JuicyPixels
-  * ghc-QuickCheck
-  * ghc-SHA
-  * ghc-aeson
-  * ghc-aeson-pretty
-  * ghc-ansi-terminal
-  * ghc-ansi-wl-pprint
-  * ghc-asn1-encoding
-  * ghc-asn1-parse
-  * ghc-asn1-types
-  * ghc-async
-  * ghc-attoparsec
-  * ghc-base-compat
-  * ghc-base64-bytestring
-  * ghc-basement
-  * ghc-blaze-builder
-  * ghc-blaze-html
-  * ghc-blaze-markup
-  * ghc-byteable
-  * ghc-call-stack
-  * ghc-case-insensitive
-  * ghc-cereal
-  * ghc-clock
-  * ghc-cmark-gfm
-  * ghc-cmdargs
-  * ghc-colour
-  * ghc-connection
-  * ghc-cookie
-  * ghc-cryptonite
-  * ghc-data-default
-  * ghc-data-default-class
-  * ghc-data-default-instances-containers
-  * ghc-data-default-instances-dlist
-  * ghc-data-default-instances-old-locale
-  * ghc-digest
-  * ghc-dlist
-  * ghc-doctemplates
-  * ghc-erf
-  * ghc-exceptions
-  * ghc-foundation
-  * ghc-haddock-library
-  * ghc-hashable
-  * ghc-hourglass
-  * ghc-hslua
-  * ghc-hslua-module-text
-  * ghc-hspec
-  * ghc-hspec-core
-  * ghc-hspec-discover
-  * ghc-hspec-expectations
-  * ghc-http-client
-  * ghc-http-client-tls
-  * ghc-http-types
-  * ghc-hxt
-  * ghc-hxt-charproperties
-  * ghc-hxt-regex-xmlschema
-  * ghc-hxt-unicode
-  * ghc-integer-logarithms
-  * ghc-memory
-  * ghc-mime-types
-  * ghc-network
-  * ghc-network-uri
-  * ghc-old-locale
-  * ghc-optparse-applicative
-  * ghc-pandoc-types
-  * ghc-pem
-  * ghc-primitive
-  * ghc-quickcheck-io
-  * ghc-random
-  * ghc-regex-base
-  * ghc-regex-pcre
-  * ghc-safe
-  * ghc-scientific
-  * ghc-setenv
-  * ghc-skylighting
-  * ghc-socks
-  * ghc-split
-  * ghc-streaming-commons
-  * ghc-syb
-  * ghc-tagged
-  * ghc-tagsoup
-  * ghc-tasty
-  * ghc-tasty-hunit
-  * ghc-tasty-quickcheck
-  * ghc-temporary
-  * ghc-texmath
-  * ghc-tf-random
-  * ghc-th-abstraction
-  * ghc-time-locale-compat
-  * ghc-tls
-  * ghc-transformers-compat
-  * ghc-unbounded-delays
-  * ghc-unordered-containers
-  * ghc-utf8-string
-  * ghc-uuid-types
-  * ghc-vector
-  * ghc-x509
-  * ghc-x509-store
-  * ghc-x509-system
-  * ghc-x509-validation
-  * ghc-xml
-  * ghc-zip-archive
-  * ghc-zlib
-  * pandoc
-  * ghc
-  * ghc-JuicyPixels
-  * ghc-SHA
-  * ghc-hxt
-  * ghc-scientific
-  * ghc-skylighting
-  * ghc-uuid-types
-  * ghc-zip-archive
-  * pandoc
-  * ghc
-  * ghc-HTTP
-  * ghc-JuicyPixels
-  * ghc-SHA
-  * ghc-aeson
-  * ghc-aeson-pretty
-  * ghc-asn1-encoding
-  * ghc-asn1-parse
-  * ghc-asn1-types
-  * ghc-attoparsec
-  * ghc-base64-bytestring
-  * ghc-blaze-builder
-  * ghc-blaze-html
-  * ghc-blaze-markup
-  * ghc-byteable
-  * ghc-case-insensitive
-  * ghc-cereal
-  * ghc-cmark-gfm
-  * ghc-connection
-  * ghc-cookie
-  * ghc-cryptonite
-  * ghc-digest
-  * ghc-doctemplates
-  * ghc-haddock-library
-  * ghc-hashable
-  * ghc-hslua
-  * ghc-hslua-module-text
-  * ghc-http-client
-  * ghc-http-client-tls
-  * ghc-http-types
-  * ghc-hxt
-  * ghc-hxt-regex-xmlschema
-  * ghc-memory
-  * ghc-mime-types
-  * ghc-network
-  * ghc-pandoc-types
-  * ghc-pem
-  * ghc-regex-base
-  * ghc-regex-pcre
-  * ghc-scientific
-  * ghc-skylighting
-  * ghc-socks
-  * ghc-streaming-commons
-  * ghc-tagsoup
-  * ghc-tls
-  * ghc-utf8-string
-  * ghc-uuid-types
-  * ghc-x509
-  * ghc-x509-store
-  * ghc-x509-system
-  * ghc-x509-validation
-  * ghc-xml
-  * ghc-zip-archive
-  * ghc-zlib
-  * pandoc
-  * ghc-Glob
-  * ghc-HTTP
-  * ghc-HUnit
-  * ghc-JuicyPixels
-  * ghc-QuickCheck
-  * ghc-SHA
-  * ghc-aeson
-  * ghc-aeson-pretty
-  * ghc-ansi-terminal
-  * ghc-ansi-wl-pprint
-  * ghc-asn1-encoding
-  * ghc-asn1-parse
-  * ghc-asn1-types
-  * ghc-async
-  * ghc-attoparsec
-  * ghc-base-compat
-  * ghc-base64-bytestring
-  * ghc-basement
-  * ghc-blaze-builder
-  * ghc-blaze-html
-  * ghc-blaze-markup
-  * ghc-byteable
-  * ghc-call-stack
-  * ghc-case-insensitive
-  * ghc-cereal
-  * ghc-clock
-  * ghc-cmark-gfm
-  * ghc-cmdargs
-  * ghc-colour
-  * ghc-connection
-  * ghc-cookie
-  * ghc-cryptonite
-  * ghc-data-default
-  * ghc-data-default-class
-  * ghc-data-default-instances-containers
-  * ghc-data-default-instances-dlist
-  * ghc-data-default-instances-old-locale
-  * ghc-digest
-  * ghc-dlist
-  * ghc-doctemplates
-  * ghc-erf
-  * ghc-exceptions
-  * ghc-foundation
-  * ghc-haddock-library
-  * ghc-hashable
-  * ghc-hourglass
-  * ghc-hslua
-  * ghc-hslua-module-text
-  * ghc-hspec
-  * ghc-hspec-core
-  * ghc-hspec-discover
-  * ghc-hspec-expectations
-  * ghc-http-client
-  * ghc-http-client-tls
-  * ghc-http-types
-  * ghc-hxt
-  * ghc-hxt-charproperties
-  * ghc-hxt-regex-xmlschema
-  * ghc-hxt-unicode
-  * ghc-integer-logarithms
-  * ghc-memory
-  * ghc-mime-types
-  * ghc-network
-  * ghc-network-uri
-  * ghc-old-locale
-  * ghc-optparse-applicative
-  * ghc-pandoc-types
-  * ghc-pem
-  * ghc-primitive
-  * ghc-quickcheck-io
-  * ghc-random
-  * ghc-regex-base
-  * ghc-regex-pcre
-  * ghc-safe
-  * ghc-scientific
-  * ghc-setenv
-  * ghc-skylighting
-  * ghc-socks
-  * ghc-split
-  * ghc-streaming-commons
-  * ghc-syb
-  * ghc-tagged
-  * ghc-tagsoup
-  * ghc-tasty
-  * ghc-tasty-hunit
-  * ghc-tasty-quickcheck
-  * ghc-temporary
-  * ghc-texmath
-  * ghc-tf-random
-  * ghc-th-abstraction
-  * ghc-time-locale-compat
-  * ghc-tls
-  * ghc-transformers-compat
-  * ghc-unbounded-delays
-  * ghc-unordered-containers
-  * ghc-utf8-string
-  * ghc-uuid-types
-  * ghc-vector
-  * ghc-x509
-  * ghc-x509-store
-  * ghc-x509-system
-  * ghc-x509-validation
-  * ghc-xml
-  * ghc-zip-archive
-  * ghc-zlib
-  * pandoc
-  * ghc
-  * ghc
-  * ghc-Glob
-  * ghc-JuicyPixels
-  * ghc-QuickCheck
-  * ghc-aeson
-  * ghc-attoparsec
-  * ghc-cereal
-  * ghc-connection
-  * ghc-data-default-instances-containers
-  * ghc-doctemplates
-  * ghc-haddock-library
-  * ghc-hslua
-  * ghc-http-client
-  * ghc-http-client-tls
-  * ghc-hxt
-  * ghc-mime-types
-  * ghc-pandoc-types
-  * ghc-regex-base
-  * ghc-regex-pcre
-  * ghc-scientific
-  * ghc-skylighting
-  * ghc-tagsoup
-  * ghc-tasty
-  * ghc-texmath
-  * ghc-th-abstraction
-  * ghc-x509
-  * ghc-x509-store
-  * ghc-x509-system
-  * ghc-x509-validation
-  * ghc-zip-archive
-  * pandoc
-  * ghc-tagsoup
-  * ghc-HUnit
-  * ghc-JuicyPixels
-  * ghc-QuickCheck
-  * ghc-aeson
-  * ghc-attoparsec
-  * ghc-blaze-builder
-  * ghc-case-insensitive
-  * ghc-cookie
-  * ghc-cryptonite
-  * ghc-dlist
-  * ghc-hashable
-  * ghc-hourglass
-  * ghc-hspec-core
-  * ghc-http-client
-  * ghc-hxt
-  * ghc-memory
-  * ghc-network-uri
-  * ghc-pandoc-types
-  * ghc-scientific
-  * ghc-tagged
-  * ghc-unordered-containers
-  * ghc-uuid-types
-  * ghc-vector
-  * pandoc
-  * ghc
-  * ghc-tagsoup
-  * ghc-Glob
-  * ghc-hspec-core
-  * ghc-hspec-discover
-  * ghc-hxt
-  * ghc-skylighting
-  * ghc-streaming-commons
-  * ghc-temporary
-  * ghc-x509-store
-  * ghc-x509-system
-  * ghc-zip-archive
-  * pandoc
-  * ghc-Glob
-  * ghc-cmdargs
-  * ghc-hspec-core
-  * ghc-hspec-discover
-  * ghc-http-client
-  * ghc-hxt
-  * ghc-skylighting
-  * ghc-temporary
-  * ghc-x509-store
-  * ghc-x509-system
-  * ghc-zip-archive
-  * pandoc
-  * ghc
-  * ghc-asn1-encoding
-  * ghc-HTTP
-  * ghc-JuicyPixels
-  * ghc-exceptions
-  * ghc-hslua
-  * ghc-hxt
-  * ghc-regex-base
-  * ghc-skylighting
-  * ghc-tasty
-  * ghc-texmath
-  * ghc-tls
-  * ghc-x509
-  * ghc-x509-store
-  * ghc-x509-system
-  * ghc-x509-validation
-  * ghc-zip-archive
-  * pandoc
-  * ghc-HTTP
-  * ghc-doctemplates
-  * ghc-haddock-library
-  * ghc-hxt
-  * ghc-hxt-regex-xmlschema
-  * ghc-network-uri
-  * ghc-texmath
-  * pandoc
-  * ghc
-  * ghc-zip-archive
-  * ghc
-  * ghc-QuickCheck
-  * ghc-tagsoup
-  * ghc-cmdargs
-  * ghc-optparse-applicative
-  * ghc-streaming-commons
-  * ghc-x509-system
-  * pandoc
-  * ghc-async
-  * ghc-exceptions
-  * ghc-hspec-core
-  * ghc-http-client
-  * ghc-streaming-commons
-  * ghc-tasty
-  * ghc-QuickCheck
-  * ghc-aeson
-  * ghc-cmdargs
-  * ghc-exceptions
-  * ghc-tagged
-  * ghc-th-abstraction
-  * ghc-asn1-encoding
-  * ghc-aeson
-  * ghc-aeson-pretty
-  * ghc-attoparsec
-  * ghc-blaze-builder
-  * ghc-blaze-html
-  * ghc-blaze-markup
-  * ghc-case-insensitive
-  * ghc-cmark-gfm
-  * ghc-cookie
-  * ghc-doctemplates
-  * ghc-haddock-library
-  * ghc-hashable
-  * ghc-hslua
-  * ghc-hslua-module-text
-  * ghc-http-client
-  * ghc-http-client-tls
-  * ghc-http-types
-  * ghc-hxt-regex-xmlschema
-  * ghc-mime-types
-  * ghc-scientific
-  * ghc-skylighting
-  * ghc-streaming-commons
-  * ghc-tagsoup
-  * ghc-uuid-types
-  * ghc-xml
-  * ghc-zip-archive
-  * pandoc
-  * ghc-tagsoup
-  * ghc-HTTP
-  * ghc-aeson
-  * ghc-cookie
-  * ghc-http-client
-  * ghc-random
-  * ghc-tf-random
-  * ghc-time-locale-compat
-  * ghc-zip-archive
-  * pandoc
-  * ghc
-  * ghc-Glob
-  * ghc-JuicyPixels
-  * ghc-QuickCheck
-  * ghc-attoparsec
-  * ghc-cmdargs
-  * ghc-exceptions
-  * ghc-haddock-library
-  * ghc-hspec-core
-  * ghc-http-client
-  * ghc-http-client-tls
-  * ghc-optparse-applicative
-  * ghc-pandoc-types
-  * ghc-primitive
-  * ghc-streaming-commons
-  * ghc-tagged
-  * ghc-temporary
-  * ghc-tls
-  * ghc-transformers-compat
-  * ghc-base-compat
-  * ghc-network
-  * ghc-setenv
-  * ghc-streaming-commons
-  * ghc-tasty
-  * ghc-temporary
-  * ghc-zip-archive
-  * pandoc
-* ghc-aeson
-  * ghc-aeson-pretty
-  * ghc-doctemplates
-  * ghc-pandoc-types
-  * ghc-skylighting
-  * pandoc
-* ghc-aeson-pretty
-  * pandoc
-* ghc-ansi-terminal
-  * ghc-ansi-wl-pprint
-  * ghc-hspec-core
-  * ghc-skylighting
-  * ghc-tasty
-* ghc-ansi-wl-pprint
-  * ghc-optparse-applicative
-* ghc-asn1-encoding
-  * ghc-asn1-parse
-  * ghc-tls
-  * ghc-x509
-  * ghc-x509-store
-  * ghc-x509-validation
-* ghc-asn1-parse
-  * ghc-x509
-* ghc-asn1-types
-  * ghc-asn1-encoding
-  * ghc-asn1-parse
-  * ghc-tls
-  * ghc-x509
-  * ghc-x509-store
-  * ghc-x509-validation
-* ghc-async
-  * ghc-streaming-commons
-  * ghc-tasty
-  * ghc-tls
-* ghc-attoparsec
-  * ghc-aeson
-  * ghc-aeson-pretty
-  * ghc-skylighting
-* ghc-base64-bytestring
-  * ghc-skylighting
-  * pandoc
-* ghc-base-compat
-  * ghc-temporary
-  * ghc-aeson
-  * ghc-aeson-pretty
-* ghc-basement
-  * ghc-cryptonite
-  * ghc-foundation
-  * ghc-memory
-  * ghc-pem
-* ghc-blaze-builder
-  * ghc-blaze-html
-  * ghc-blaze-markup
-  * ghc-http-client
-* ghc-blaze-html
-  * ghc-doctemplates
-  * ghc-skylighting
-  * pandoc
-* ghc-blaze-markup
-  * ghc-blaze-html
-  * ghc-doctemplates
-  * pandoc
-* ghc-byteable
-  * ghc-connection
-* ghc-call-stack
-  * ghc-HUnit
-  * ghc-hspec-core
-  * ghc-hspec-expectations
-  * ghc-tasty-hunit
-* ghc-case-insensitive
-  * ghc-http-client
-  * ghc-http-client-tls
-  * ghc-http-types
-  * ghc-skylighting
-  * pandoc
-* ghc-cereal
-  * ghc-socks
-  * ghc-tls
-* ghc-clock
-  * ghc-hspec-core
-  * ghc-tasty
-* ghc-cmark-gfm
-  * pandoc
-* ghc-cmdargs
-  * ghc-aeson-pretty
-* ghc-colour
-  * ghc-ansi-terminal
-  * ghc-skylighting
-* ghc-connection
-  * ghc-http-client-tls
-* ghc-cookie
-  * ghc-http-client
-* ghc-cryptonite
-  * ghc-http-client-tls
-  * ghc-tls
-  * ghc-x509
-  * ghc-x509-store
-  * ghc-x509-validation
-* ghc-data-default
-  * pandoc
-* ghc-data-default-class
-  * ghc-connection
-  * ghc-cookie
-  * ghc-data-default
-  * ghc-data-default-instances-containers
-  * ghc-data-default-instances-dlist
-  * ghc-data-default-instances-old-locale
-  * ghc-http-client-tls
-  * ghc-tls
-  * ghc-x509-validation
-* ghc-data-default-instances-containers
-  * ghc-data-default
-* ghc-data-default-instances-dlist
-  * ghc-data-default
-* ghc-data-default-instances-old-locale
-  * ghc-data-default
-* ghc-digest
-  * ghc-zip-archive
-* ghc-dlist
-  * ghc-Glob
-  * ghc-aeson
-  * ghc-data-default-instances-dlist
-* ghc-doctemplates
-  * pandoc
-* ghc-erf
-  * ghc-QuickCheck
-* ghc-exceptions
-  * ghc-hslua
-  * ghc-http-client
-  * ghc-http-client-tls
-  * ghc-temporary
-  * pandoc
-* ghc-foundation
-  * ghc-memory
-* ghc-Glob
-  * pandoc
-* ghc-haddock-library
-  * pandoc
-* ghc-hashable
-  * ghc-aeson
-  * ghc-async
-  * ghc-case-insensitive
-  * ghc-scientific
-  * ghc-unordered-containers
-  * ghc-uuid-types
-* ghc-hourglass
-  * ghc-asn1-encoding
-  * ghc-asn1-types
-  * ghc-x509
-  * ghc-x509-validation
-* ghc-hslua
-  * ghc-hslua-module-text
-  * pandoc
-* ghc-hslua-module-text
-  * pandoc
-* ghc-hspec
-  * ghc-doctemplates
-* ghc-hspec-core
-  * ghc-hspec
-* ghc-hspec-discover
-  * ghc-hspec
-* ghc-hspec-expectations
-  * ghc-hspec
-  * ghc-hspec-core
-* ghc-HTTP
-  * pandoc
-* ghc-http-client
-  * ghc-http-client-tls
-  * pandoc
-* ghc-http-client-tls
-  * pandoc
-* ghc-http-types
-  * ghc-http-client
-  * ghc-http-client-tls
-  * pandoc
-* ghc-HUnit
-  * ghc-cmark-gfm
-  * ghc-hspec-core
-  * ghc-hspec-expectations
-  * ghc-quickcheck-io
-* ghc-hxt
-  * ghc-skylighting
-* ghc-hxt-charproperties
-  * ghc-hxt
-  * ghc-hxt-regex-xmlschema
-  * ghc-hxt-unicode
-* ghc-hxt-regex-xmlschema
-  * ghc-hxt
-* ghc-hxt-unicode
-  * ghc-hxt
-* ghc-integer-logarithms
-  * ghc-scientific
-* ghc-JuicyPixels
-  * pandoc
-* ghc-memory
-  * ghc-asn1-types
-  * ghc-cryptonite
-  * ghc-http-client
-  * ghc-http-client-tls
-  * ghc-pem
-  * ghc-tls
-  * ghc-x509
-  * ghc-x509-validation
-* ghc-mime-types
-  * ghc-http-client
-* ghc-network
-  * ghc-HTTP
-  * ghc-connection
-  * ghc-http-client
-  * ghc-http-client-tls
-  * ghc-socks
-  * ghc-streaming-commons
-  * ghc-tls
-  * pandoc
-* ghc-network-uri
-  * ghc-HTTP
-  * ghc-http-client
-  * ghc-http-client-tls
-  * ghc-hxt
-  * pandoc
-* ghc-old-locale
-  * ghc-data-default-instances-old-locale
-  * ghc-time-locale-compat
-* ghc-optparse-applicative
-  * ghc-tasty
-  * ghc-tasty-quickcheck
-* ghc-pandoc-types
-  * ghc-texmath
-  * pandoc
-* ghc-pem
-  * ghc-x509
-  * ghc-x509-store
-  * ghc-x509-system
-  * ghc-x509-validation
-* ghc-primitive
-  * ghc-JuicyPixels
-  * ghc-aeson
-  * ghc-scientific
-  * ghc-tf-random
-  * ghc-vector
-* ghc-QuickCheck
-  * ghc-dlist
-  * ghc-optparse-applicative
-  * ghc-tagsoup
-  * ghc-hspec
-  * ghc-hspec-core
-  * ghc-pandoc-types
-  * ghc-quickcheck-io
-  * ghc-tasty-quickcheck
-* ghc-quickcheck-io
-  * ghc-hspec-core
-* ghc-random
-  * ghc-QuickCheck
-  * ghc-hspec-core
-  * ghc-http-client
-  * ghc-streaming-commons
-  * ghc-tasty-quickcheck
-  * ghc-temporary
-  * ghc-tf-random
-  * ghc-uuid-types
-  * pandoc
-* ghc-regex-base
-  * ghc-regex-pcre
-* ghc-regex-pcre
-  * ghc-skylighting
-* ghc-rpm-macros
-  * ghc
-  * ghc-skylighting
-  * ghc-tasty
-  * pandoc
-  * ghc-Glob
-  * ghc-HTTP
-  * ghc-HUnit
-  * ghc-JuicyPixels
-  * ghc-QuickCheck
-  * ghc-SHA
-  * ghc-aeson
-  * ghc-aeson-pretty
-  * ghc-ansi-terminal
-  * ghc-ansi-wl-pprint
-  * ghc-asn1-encoding
-  * ghc-asn1-parse
-  * ghc-asn1-types
-  * ghc-async
-  * ghc-attoparsec
-  * ghc-base-compat
-  * ghc-base64-bytestring
-  * ghc-basement
-  * ghc-blaze-builder
-  * ghc-blaze-html
-  * ghc-blaze-markup
-  * ghc-byteable
-  * ghc-call-stack
-  * ghc-case-insensitive
-  * ghc-cereal
-  * ghc-clock
-  * ghc-cmark-gfm
-  * ghc-cmdargs
-  * ghc-colour
-  * ghc-connection
-  * ghc-cookie
-  * ghc-cryptonite
-  * ghc-data-default
-  * ghc-data-default-class
-  * ghc-data-default-instances-containers
-  * ghc-data-default-instances-dlist
-  * ghc-data-default-instances-old-locale
-  * ghc-digest
-  * ghc-dlist
-  * ghc-doctemplates
-  * ghc-erf
-  * ghc-exceptions
-  * ghc-foundation
-  * ghc-haddock-library
-  * ghc-hashable
-  * ghc-hourglass
-  * ghc-hslua
-  * ghc-hslua-module-text
-  * ghc-hspec
-  * ghc-hspec-core
-  * ghc-hspec-discover
-  * ghc-hspec-expectations
-  * ghc-http-client
-  * ghc-http-client-tls
-  * ghc-http-types
-  * ghc-hxt
-  * ghc-hxt-charproperties
-  * ghc-hxt-regex-xmlschema
-  * ghc-hxt-unicode
-  * ghc-integer-logarithms
-  * ghc-memory
-  * ghc-mime-types
-  * ghc-network
-  * ghc-network-uri
-  * ghc-old-locale
-  * ghc-optparse-applicative
-  * ghc-pandoc-types
-  * ghc-pem
-  * ghc-primitive
-  * ghc-quickcheck-io
-  * ghc-random
-  * ghc-regex-base
-  * ghc-regex-pcre
-  * ghc-safe
-  * ghc-scientific
-  * ghc-setenv
-  * ghc-socks
-  * ghc-split
-  * ghc-streaming-commons
-  * ghc-syb
-  * ghc-tagged
-  * ghc-tagsoup
-  * ghc-tasty-hunit
-  * ghc-tasty-quickcheck
-  * ghc-temporary
-  * ghc-texmath
-  * ghc-tf-random
-  * ghc-th-abstraction
-  * ghc-time-locale-compat
-  * ghc-tls
-  * ghc-transformers-compat
-  * ghc-unbounded-delays
-  * ghc-unordered-containers
-  * ghc-utf8-string
-  * ghc-uuid-types
-  * ghc-vector
-  * ghc-x509
-  * ghc-x509-store
-  * ghc-x509-system
-  * ghc-x509-validation
-  * ghc-xml
-  * ghc-zip-archive
-  * ghc-zlib
-* ghc-safe
-  * ghc-skylighting
-  * pandoc
-* ghc-scientific
-  * ghc-aeson
-  * ghc-aeson-pretty
-  * ghc-attoparsec
-  * ghc-doctemplates
-* ghc-setenv
-  * ghc-hspec-core
-* ghc-SHA
-  * pandoc
-* ghc-skylighting
-  * pandoc
-* ghc-socks
-  * ghc-connection
-* ghc-split
-  * pandoc
-* ghc-streaming-commons
-  * ghc-http-client
-* ghc-syb
-  * ghc-pandoc-types
-  * ghc-texmath
-  * pandoc
-* ghc-tagged
-  * ghc-aeson
-  * ghc-tasty
-  * ghc-tasty-quickcheck
-* ghc-tagsoup
-  * pandoc
-* ghc-tasty
-  * ghc-asn1-encoding
-  * ghc-temporary
-  * ghc-tasty-hunit
-  * ghc-tasty-quickcheck
-* ghc-tasty-hunit
-  * ghc-temporary
-* ghc-tasty-quickcheck
-  * ghc-asn1-encoding
-* ghc-temporary
-  * pandoc
-* ghc-texmath
-  * pandoc
-* ghc-tf-random
-  * ghc-QuickCheck
-  * ghc-hspec-core
-* ghc-th-abstraction
-  * ghc-aeson
-* ghc-time-locale-compat
-  * ghc-aeson
-* ghc-tls
-  * ghc-connection
-  * ghc-http-client-tls
-* ghc-transformers-compat
-  * ghc-Glob
-  * ghc-exceptions
-  * ghc-optparse-applicative
-* ghc-unbounded-delays
-  * ghc-tasty
-* ghc-unordered-containers
-  * ghc-aeson
-  * ghc-aeson-pretty
-  * ghc-doctemplates
-  * pandoc
-* ghc-utf8-string
-  * ghc-skylighting
-* ghc-uuid-types
-  * ghc-aeson
-* ghc-vector
-  * ghc-JuicyPixels
-  * ghc-aeson
-  * ghc-aeson-pretty
-  * ghc-doctemplates
-  * pandoc
-* ghc-x509
-  * ghc-connection
-  * ghc-tls
-  * ghc-x509-store
-  * ghc-x509-system
-  * ghc-x509-validation
-* ghc-x509-store
-  * ghc-connection
-  * ghc-tls
-  * ghc-x509-system
-  * ghc-x509-validation
-* ghc-x509-system
-  * ghc-connection
-* ghc-x509-validation
-  * ghc-connection
-  * ghc-tls
-* ghc-xml
-  * ghc-texmath
-  * pandoc
-* ghc-zip-archive
-  * pandoc
-* ghc-zlib
-  * ghc-JuicyPixels
-  * ghc-streaming-commons
-  * ghc-zip-archive
-  * pandoc
-* llvm6.0
-  * ghc
-* pandoc
-  * cppcheck
+* aalto-xml (package added)
+* ant-antunit (package added)
+  * forbidden-apis  (Requires: ant-antunit)
+* apache-commons-daemon (package added)
+  * tomcat  (Requires: apache-commons-daemon)
+* apiviz (package added)
+* avalon-framework (package added)
+  * fop  (Requires: avalon-framework)
+* baekmuk-ttf-fonts (package added)
+  * publican  (Requires: baekmuk-ttf-fonts)
+* batik (package added)
+  * fop  (Requires: batik)
+* bea-stax (package added)
+  * lz4-java  (Requires: bea-stax)
+  * simple-xml  (Requires: bea-stax)
+  * simple-xml  (Requires: bea-stax)
+* compress-lzf (package added)
+* cpptasks (package added)
+  * lz4-java  (Requires: cpptasks)
+* disruptor (package added)
+* docbook5-schemas (package added)
+  * publican  (Requires: docbook5-schemas)
+* fop (package added)
+  * publican  (Requires: fop)
+  * scons  (Requires: fop)
+* forbidden-apis (package added)
+* freerdp (package added)
+* geronimo-jaxrpc (package added)
+  * tomcat  (Requires: geronimo-jaxrpc)
+* geronimo-osgi-support (package added)
+* geronimo-saaj (package added)
+  * tomcat  (Requires: geronimo-saaj)
+* google-noto-emoji-fonts (package added)
+  * pdfbox  (Requires: google-noto-emoji-fonts)
+* guava20 (package added)
+* icc-profiles-openicc (package added)
+  * pdfbox  (Requires: icc-profiles-openicc)
+* icu4j (package added)
+  * jython  (Requires: icu4j)
+* imlib2 (package added)
+  * openbox  (Requires: imlib2)
+* javaparser (package added)
+* jboss-el-2.2-api (package added)
+* jboss-jsp-2.2-api (package added)
+* jboss-marshalling (package added)
+* jboss-modules (package added)
+* jboss-servlet-3.0-api (package added)
+* jctools (package added)
+  * jython  (Requires: jctools)
+* jetty-alpn-api (package added)
+* jetty-build-support (package added)
+* jetty-parent (package added)
+* jetty-toolchain (package added)
+* jmock (package added)
+* jython (package added)
+* kf5-karchive (package added)
+  * kdevelop  (Requires: kf5-karchive)
+  * kf5-kdoctools  (Requires: kf5-karchive)
+  * kf5-kemoticons  (Requires: kf5-karchive)
+  * kf5-kfilemetadata  (Requires: kf5-karchive)
+  * kf5-khtml  (Requires: kf5-karchive)
+  * kf5-kiconthemes  (Requires: kf5-karchive)
+  * kf5-kio  (Requires: kf5-karchive)
+  * kf5-knewstuff  (Requires: kf5-karchive)
+  * kf5-kpackage  (Requires: kf5-karchive)
+  * kf5-ktexteditor  (Requires: kf5-karchive)
+  * kf5-libksieve  (Requires: kf5-karchive)
+  * kf5-mailimporter  (Requires: kf5-karchive)
+  * kf5-messagelib  (Requires: kf5-karchive)
+  * kf5-plasma  (Requires: kf5-karchive)
+  * plasma-sdk  (Requires: kf5-karchive)
+* kf5-kauth (package added)
+  * kf5-kconfigwidgets  (Requires: kf5-kauth)
+  * plasma-breeze  (Requires: kf5-kauth)
+* kf5-kcodecs (package added)
+  * kf5-akonadi-calendar  (Requires: kf5-kcodecs)
+  * kf5-akonadi-mime  (Requires: kf5-kcodecs)
+  * kf5-kbookmarks  (Requires: kf5-kcodecs)
+  * kf5-kcalendarutils  (Requires: kf5-kcodecs)
+  * kf5-kconfigwidgets  (Requires: kf5-kcodecs)
+  * kf5-kcontacts  (Requires: kf5-kcodecs)
+  * kf5-khtml  (Requires: kf5-kcodecs)
+  * kf5-kidentitymanagement  (Requires: kf5-kcodecs)
+  * kf5-kmime  (Requires: kf5-kcodecs)
+  * kf5-knotifications  (Requires: kf5-kcodecs)
+  * kf5-messagelib  (Requires: kf5-kcodecs)
+  * kf5-syndication  (Requires: kf5-kcodecs)
+  * libkomparediff2  (Requires: kf5-kcodecs)
+  * okteta  (Requires: kf5-kcodecs)
+* kf5-kconfigwidgets (package added)
+  * kde-connect  (Requires: kf5-kconfigwidgets)
+  * kf5-frameworkintegration  (Requires: kf5-kconfigwidgets)
+  * kf5-kbookmarks  (Requires: kf5-kconfigwidgets)
+  * kf5-kcmutils  (Requires: kf5-kconfigwidgets)
+  * kf5-kdelibs4support  (Requires: kf5-kconfigwidgets)
+  * kf5-kdesignerplugin  (Requires: kf5-kconfigwidgets)
+  * kf5-kiconthemes  (Requires: kf5-kconfigwidgets)
+  * kf5-kio  (Requires: kf5-kconfigwidgets)
+  * kf5-knotifyconfig  (Requires: kf5-kconfigwidgets)
+  * kf5-ktextwidgets  (Requires: kf5-kconfigwidgets)
+  * kf5-kwallet  (Requires: kf5-kconfigwidgets)
+  * kf5-kxmlgui  (Requires: kf5-kconfigwidgets)
+  * kf5-plasma  (Requires: kf5-kconfigwidgets)
+  * kwin  (Requires: kf5-kconfigwidgets)
+  * okteta  (Requires: kf5-kconfigwidgets)
+  * plasma-nm  (Requires: kf5-kconfigwidgets)
+  * plasma-pa  (Requires: kf5-kconfigwidgets)
+  * plasma-sdk  (Requires: kf5-kconfigwidgets)
+* kf5-kcoreaddons (package added)
+  * kaccounts-integration  (Requires: kf5-kcoreaddons)
+  * kf5-baloo  (Requires: kf5-kcoreaddons)
+  * kf5-kactivities  (Requires: kf5-kcoreaddons)
+  * kf5-kauth  (Requires: kf5-kcoreaddons)
+  * kf5-kblog  (Requires: kf5-kcoreaddons)
+  * kf5-kbookmarks  (Requires: kf5-kcoreaddons)
+  * kf5-kcalendarutils  (Requires: kf5-kcoreaddons)
+  * kf5-kcmutils  (Requires: kf5-kcoreaddons)
+  * kf5-kconfigwidgets  (Requires: kf5-kcoreaddons)
+  * kf5-kcontacts  (Requires: kf5-kcoreaddons)
+  * kf5-kcrash  (Requires: kf5-kcoreaddons)
+  * kf5-kded  (Requires: kf5-kcoreaddons)
+  * kf5-kdesignerplugin  (Requires: kf5-kcoreaddons)
+  * kf5-kdesu  (Requires: kf5-kcoreaddons)
+  * kf5-kdewebkit  (Requires: kf5-kcoreaddons)
+  * kf5-kemoticons  (Requires: kf5-kcoreaddons)
+  * kf5-kfilemetadata  (Requires: kf5-kcoreaddons)
+  * kf5-kglobalaccel  (Requires: kf5-kcoreaddons)
+  * kf5-kiconthemes  (Requires: kf5-kcoreaddons)
+  * kf5-kidentitymanagement  (Requires: kf5-kcoreaddons)
+  * kf5-kimap  (Requires: kf5-kcoreaddons)
+  * kf5-kio  (Requires: kf5-kcoreaddons)
+  * kf5-kjobwidgets  (Requires: kf5-kcoreaddons)
+  * kf5-knewstuff  (Requires: kf5-kcoreaddons)
+  * kf5-knotifications  (Requires: kf5-kcoreaddons)
+  * kf5-kontactinterface  (Requires: kf5-kcoreaddons)
+  * kf5-kpackage  (Requires: kf5-kcoreaddons)
+  * kf5-kparts  (Requires: kf5-kcoreaddons)
+  * kf5-kpeople  (Requires: kf5-kcoreaddons)
+  * kf5-kpty  (Requires: kf5-kcoreaddons)
+  * kf5-kross  (Requires: kf5-kcoreaddons)
+  * kf5-krunner  (Requires: kf5-kcoreaddons)
+  * kf5-kservice  (Requires: kf5-kcoreaddons)
+  * kf5-kwallet  (Requires: kf5-kcoreaddons)
+  * kf5-kxmlgui  (Requires: kf5-kcoreaddons)
+  * kf5-plasma  (Requires: kf5-kcoreaddons)
+  * kf5-purpose  (Requires: kf5-kcoreaddons)
+  * kwin  (Requires: kf5-kcoreaddons)
+  * libkgapi  (Requires: kf5-kcoreaddons)
+  * libkomparediff2  (Requires: kf5-kcoreaddons)
+  * marble  (Requires: kf5-kcoreaddons)
+  * plasma-breeze  (Requires: kf5-kcoreaddons)
+  * plasma-mediacenter  (Requires: kf5-kcoreaddons)
+  * plasma-nm  (Requires: kf5-kcoreaddons)
+  * plasma-pa  (Requires: kf5-kcoreaddons)
+  * plasma-pk-updates  (Requires: kf5-kcoreaddons)
+  * plasma-sdk  (Requires: kf5-kcoreaddons)
+  * subversion  (Requires: kf5-kcoreaddons)
+* kf5-kcrash (package added)
+  * kdevelop  (Requires: kf5-kcrash)
+  * kf5-akonadi-search  (Requires: kf5-kcrash)
+  * kf5-baloo  (Requires: kf5-kcrash)
+  * kf5-kded  (Requires: kf5-kcrash)
+  * kf5-kdelibs4support  (Requires: kf5-kcrash)
+  * kf5-kglobalaccel  (Requires: kf5-kcrash)
+  * kf5-kinit  (Requires: kf5-kcrash)
+  * kf5-kio  (Requires: kf5-kcrash)
+  * kf5-kservice  (Requires: kf5-kcrash)
+  * kscreenlocker  (Requires: kf5-kcrash)
+  * kwin  (Requires: kf5-kcrash)
+  * marble  (Requires: kf5-kcrash)
+  * plasma-workspace  (Requires: kf5-kcrash)
+* kf5-kdbusaddons (package added)
+  * kaccounts-integration  (Requires: kf5-kdbusaddons)
+  * kde-connect  (Requires: kf5-kdbusaddons)
+  * kf5-akonadi-contacts  (Requires: kf5-kdbusaddons)
+  * kf5-baloo  (Requires: kf5-kdbusaddons)
+  * kf5-kactivities  (Requires: kf5-kdbusaddons)
+  * kf5-kded  (Requires: kf5-kdbusaddons)
+  * kf5-kdelibs4support  (Requires: kf5-kdbusaddons)
+  * kf5-kglobalaccel  (Requires: kf5-kdbusaddons)
+  * kf5-kio  (Requires: kf5-kdbusaddons)
+  * kf5-kservice  (Requires: kf5-kdbusaddons)
+  * kf5-kwallet  (Requires: kf5-kdbusaddons)
+  * kf5-plasma  (Requires: kf5-kdbusaddons)
+  * okteta  (Requires: kf5-kdbusaddons)
+  * plasma-nm  (Requires: kf5-kdbusaddons)
+  * plasma-sdk  (Requires: kf5-kdbusaddons)
+* kf5-kdoctools (package added)
+  * kde-connect  (Requires: kf5-kdoctools)
+  * kdevelop  (Requires: kf5-kdoctools)
+  * kf5-kconfigwidgets  (Requires: kf5-kdoctools)
+  * kf5-kded  (Requires: kf5-kdoctools)
+  * kf5-kdelibs4support  (Requires: kf5-kdoctools)
+  * kf5-kdesignerplugin  (Requires: kf5-kdoctools)
+  * kf5-kinit  (Requires: kf5-kdoctools)
+  * kf5-kio  (Requires: kf5-kdoctools)
+  * kf5-kjs  (Requires: kf5-kdoctools)
+  * kf5-kjsembed  (Requires: kf5-kdoctools)
+  * kf5-kldap  (Requires: kf5-kdoctools)
+  * kf5-kpackage  (Requires: kf5-kdoctools)
+  * kf5-kross  (Requires: kf5-kdoctools)
+  * kf5-kservice  (Requires: kf5-kdoctools)
+  * kf5-kwallet  (Requires: kf5-kdoctools)
+  * kf5-plasma  (Requires: kf5-kdoctools)
+  * kwin  (Requires: kf5-kdoctools)
+  * marble  (Requires: kf5-kdoctools)
+  * okteta  (Requires: kf5-kdoctools)
+  * plasma-desktop  (Requires: kf5-kdoctools)
+  * plasma-pa  (Requires: kf5-kdoctools)
+  * plasma-workspace  (Requires: kf5-kdoctools)
+* kf5-kguiaddons (package added)
+  * kdevelop  (Requires: kf5-kguiaddons)
+  * kf5-kconfigwidgets  (Requires: kf5-kguiaddons)
+  * kf5-kdeclarative  (Requires: kf5-kguiaddons)
+  * kf5-kdelibs4support  (Requires: kf5-kguiaddons)
+  * kf5-ktexteditor  (Requires: kf5-kguiaddons)
+  * kf5-plasma  (Requires: kf5-kguiaddons)
+  * plasma-breeze  (Requires: kf5-kguiaddons)
+  * plasma-mediacenter  (Requires: kf5-kguiaddons)
+  * plasma-oxygen  (Requires: kf5-kguiaddons)
+* kf5-ki18n (package added)
+  * kaccounts-integration  (Requires: kf5-ki18n)
+  * kde-connect  (Requires: kf5-ki18n)
+  * kdevelop  (Requires: kf5-ki18n)
+  * kf5-akonadi-contacts  (Requires: kf5-ki18n)
+  * kf5-akonadi-notes  (Requires: kf5-ki18n)
+  * kf5-akonadi-search  (Requires: kf5-ki18n)
+  * kf5-baloo  (Requires: kf5-ki18n)
+  * kf5-frameworkintegration  (Requires: kf5-ki18n)
+  * kf5-kactivities  (Requires: kf5-ki18n)
+  * kf5-kcalendarutils  (Requires: kf5-ki18n)
+  * kf5-kcmutils  (Requires: kf5-ki18n)
+  * kf5-kconfigwidgets  (Requires: kf5-ki18n)
+  * kf5-kcontacts  (Requires: kf5-ki18n)
+  * kf5-kdeclarative  (Requires: kf5-ki18n)
+  * kf5-kdelibs4support  (Requires: kf5-ki18n)
+  * kf5-kdesu  (Requires: kf5-ki18n)
+  * kf5-kdoctools  (Requires: kf5-ki18n)
+  * kf5-kfilemetadata  (Requires: kf5-ki18n)
+  * kf5-kglobalaccel  (Requires: kf5-ki18n)
+  * kf5-khtml  (Requires: kf5-ki18n)
+  * kf5-kiconthemes  (Requires: kf5-ki18n)
+  * kf5-kinit  (Requires: kf5-ki18n)
+  * kf5-kio  (Requires: kf5-ki18n)
+  * kf5-kjsembed  (Requires: kf5-ki18n)
+  * kf5-kldap  (Requires: kf5-ki18n)
+  * kf5-kmime  (Requires: kf5-ki18n)
+  * kf5-knewstuff  (Requires: kf5-ki18n)
+  * kf5-knotifyconfig  (Requires: kf5-ki18n)
+  * kf5-kontactinterface  (Requires: kf5-ki18n)
+  * kf5-kpackage  (Requires: kf5-ki18n)
+  * kf5-kparts  (Requires: kf5-ki18n)
+  * kf5-kpeople  (Requires: kf5-ki18n)
+  * kf5-kpty  (Requires: kf5-ki18n)
+  * kf5-kross  (Requires: kf5-ki18n)
+  * kf5-krunner  (Requires: kf5-ki18n)
+  * kf5-kservice  (Requires: kf5-ki18n)
+  * kf5-ktexteditor  (Requires: kf5-ki18n)
+  * kf5-ktextwidgets  (Requires: kf5-ki18n)
+  * kf5-kunitconversion  (Requires: kf5-ki18n)
+  * kf5-kwallet  (Requires: kf5-ki18n)
+  * kf5-kxmlgui  (Requires: kf5-ki18n)
+  * kf5-kxmlrpcclient  (Requires: kf5-ki18n)
+  * kf5-libgravatar  (Requires: kf5-ki18n)
+  * kf5-libkgeomap  (Requires: kf5-ki18n)
+  * kf5-libkipi  (Requires: kf5-ki18n)
+  * kf5-libksane  (Requires: kf5-ki18n)
+  * kf5-libksieve  (Requires: kf5-ki18n)
+  * kf5-mailimporter  (Requires: kf5-ki18n)
+  * kf5-messagelib  (Requires: kf5-ki18n)
+  * kf5-plasma  (Requires: kf5-ki18n)
+  * kf5-purpose  (Requires: kf5-ki18n)
+  * kwin  (Requires: kf5-ki18n)
+  * libkomparediff2  (Requires: kf5-ki18n)
+  * marble  (Requires: kf5-ki18n)
+  * okteta  (Requires: kf5-ki18n)
+  * plasma-breeze  (Requires: kf5-ki18n)
+  * plasma-desktop  (Requires: kf5-ki18n)
+  * plasma-mediacenter  (Requires: kf5-ki18n)
+  * plasma-milou  (Requires: kf5-ki18n)
+  * plasma-nm  (Requires: kf5-ki18n)
+  * plasma-oxygen  (Requires: kf5-ki18n)
+  * plasma-pa  (Requires: kf5-ki18n)
+  * plasma-pk-updates  (Requires: kf5-ki18n)
+  * plasma-sdk  (Requires: kf5-ki18n)
+  * subversion  (Requires: kf5-ki18n)
+* kf5-kiconthemes (package added)
+  * kaccounts-integration  (Requires: kf5-kiconthemes)
+  * kde-connect  (Requires: kf5-kiconthemes)
+  * kdevelop  (Requires: kf5-kiconthemes)
+  * kf5-frameworkintegration  (Requires: kf5-kiconthemes)
+  * kf5-kbookmarks  (Requires: kf5-kiconthemes)
+  * kf5-kcmutils  (Requires: kf5-kiconthemes)
+  * kf5-kdeclarative  (Requires: kf5-kiconthemes)
+  * kf5-kdelibs4support  (Requires: kf5-kiconthemes)
+  * kf5-kdesignerplugin  (Requires: kf5-kiconthemes)
+  * kf5-khtml  (Requires: kf5-kiconthemes)
+  * kf5-kio  (Requires: kf5-kiconthemes)
+  * kf5-knewstuff  (Requires: kf5-kiconthemes)
+  * kf5-kontactinterface  (Requires: kf5-kiconthemes)
+  * kf5-kparts  (Requires: kf5-kiconthemes)
+  * kf5-kross  (Requires: kf5-kiconthemes)
+  * kf5-ktexteditor  (Requires: kf5-kiconthemes)
+  * kf5-ktextwidgets  (Requires: kf5-kiconthemes)
+  * kf5-kwallet  (Requires: kf5-kiconthemes)
+  * kf5-kxmlgui  (Requires: kf5-kiconthemes)
+  * kf5-libksieve  (Requires: kf5-kiconthemes)
+  * kf5-messagelib  (Requires: kf5-kiconthemes)
+  * kf5-plasma  (Requires: kf5-kiconthemes)
+  * kwin  (Requires: kf5-kiconthemes)
+  * okteta  (Requires: kf5-kiconthemes)
+  * plasma-nm  (Requires: kf5-kiconthemes)
+  * plasma-pk-updates  (Requires: kf5-kiconthemes)
+  * plasma-sdk  (Requires: kf5-kiconthemes)
+* kf5-kitemviews (package added)
+  * kdevelop  (Requires: kf5-kitemviews)
+  * kf5-kcmutils  (Requires: kf5-kitemviews)
+  * kf5-kdesignerplugin  (Requires: kf5-kitemviews)
+  * kf5-kiconthemes  (Requires: kf5-kitemviews)
+  * kf5-kio  (Requires: kf5-kitemviews)
+  * kf5-knewstuff  (Requires: kf5-kitemviews)
+  * kf5-kpeople  (Requires: kf5-kitemviews)
+  * kf5-kxmlgui  (Requires: kf5-kitemviews)
+  * kf5-messagelib  (Requires: kf5-kitemviews)
+  * plasma-nm  (Requires: kf5-kitemviews)
+* kf5-knotifications (package added)
+  * kde-connect  (Requires: kf5-knotifications)
+  * kdevelop  (Requires: kf5-knotifications)
+  * kf5-frameworkintegration  (Requires: kf5-knotifications)
+  * kf5-kdelibs4support  (Requires: kf5-knotifications)
+  * kf5-khtml  (Requires: kf5-knotifications)
+  * kf5-kio  (Requires: kf5-knotifications)
+  * kf5-knotifyconfig  (Requires: kf5-knotifications)
+  * kf5-kparts  (Requires: kf5-knotifications)
+  * kf5-kwallet  (Requires: kf5-knotifications)
+  * kf5-plasma  (Requires: kf5-knotifications)
+  * kwin  (Requires: kf5-knotifications)
+  * plasma-nm  (Requires: kf5-knotifications)
+  * plasma-pk-updates  (Requires: kf5-knotifications)
+* kf5-kservice (package added)
+  * kdevelop  (Requires: kf5-kservice)
+  * kf5-kactivities  (Requires: kf5-kservice)
+  * kf5-kcmutils  (Requires: kf5-kservice)
+  * kf5-kded  (Requires: kf5-kservice)
+  * kf5-kdelibs4support  (Requires: kf5-kservice)
+  * kf5-kdesu  (Requires: kf5-kservice)
+  * kf5-kdewebkit  (Requires: kf5-kservice)
+  * kf5-kemoticons  (Requires: kf5-kservice)
+  * kf5-kglobalaccel  (Requires: kf5-kservice)
+  * kf5-kinit  (Requires: kf5-kservice)
+  * kf5-kio  (Requires: kf5-kservice)
+  * kf5-knewstuff  (Requires: kf5-kservice)
+  * kf5-kparts  (Requires: kf5-kservice)
+  * kf5-kpeople  (Requires: kf5-kservice)
+  * kf5-krunner  (Requires: kf5-kservice)
+  * kf5-ktextwidgets  (Requires: kf5-kservice)
+  * kf5-kwallet  (Requires: kf5-kservice)
+  * kf5-libkgeomap  (Requires: kf5-kservice)
+  * kf5-libkipi  (Requires: kf5-kservice)
+  * kf5-plasma  (Requires: kf5-kservice)
+  * kwin  (Requires: kf5-kservice)
+  * marble  (Requires: kf5-kservice)
+  * okteta  (Requires: kf5-kservice)
+  * plasma-breeze  (Requires: kf5-kservice)
+  * plasma-mediacenter  (Requires: kf5-kservice)
+  * plasma-nm  (Requires: kf5-kservice)
+  * plasma-oxygen  (Requires: kf5-kservice)
+  * plasma-sdk  (Requires: kf5-kservice)
+* kf5-kwallet (package added)
+  * kaccounts-integration  (Requires: kf5-kwallet)
+  * kf5-akonadi-calendar  (Requires: kf5-kwallet)
+  * kf5-kdewebkit  (Requires: kf5-kwallet)
+  * kf5-khtml  (Requires: kf5-kwallet)
+  * kf5-kio  (Requires: kf5-kwallet)
+  * kf5-libksane  (Requires: kf5-kwallet)
+  * libkgapi  (Requires: kf5-kwallet)
+  * marble  (Requires: kf5-kwallet)
+  * plasma-desktop  (Requires: kf5-kwallet)
+  * plasma-nm  (Requires: kf5-kwallet)
+  * plasma-workspace  (Requires: kf5-kwallet)
+  * subversion  (Requires: kf5-kwallet)
+* kf5-kwidgetsaddons (package added)
+  * kaccounts-integration  (Requires: kf5-kwidgetsaddons)
+  * kf5-frameworkintegration  (Requires: kf5-kwidgetsaddons)
+  * kf5-kactivities  (Requires: kf5-kwidgetsaddons)
+  * kf5-kbookmarks  (Requires: kf5-kwidgetsaddons)
+  * kf5-kcompletion  (Requires: kf5-kwidgetsaddons)
+  * kf5-kconfigwidgets  (Requires: kf5-kwidgetsaddons)
+  * kf5-kdeclarative  (Requires: kf5-kwidgetsaddons)
+  * kf5-kdelibs4support  (Requires: kf5-kwidgetsaddons)
+  * kf5-kdesignerplugin  (Requires: kf5-kwidgetsaddons)
+  * kf5-khtml  (Requires: kf5-kwidgetsaddons)
+  * kf5-kiconthemes  (Requires: kf5-kwidgetsaddons)
+  * kf5-kio  (Requires: kf5-kwidgetsaddons)
+  * kf5-kjobwidgets  (Requires: kf5-kwidgetsaddons)
+  * kf5-kldap  (Requires: kf5-kwidgetsaddons)
+  * kf5-knewstuff  (Requires: kf5-kwidgetsaddons)
+  * kf5-knotifyconfig  (Requires: kf5-kwidgetsaddons)
+  * kf5-kparts  (Requires: kf5-kwidgetsaddons)
+  * kf5-kpeople  (Requires: kf5-kwidgetsaddons)
+  * kf5-kross  (Requires: kf5-kwidgetsaddons)
+  * kf5-ktextwidgets  (Requires: kf5-kwidgetsaddons)
+  * kf5-kwallet  (Requires: kf5-kwidgetsaddons)
+  * kf5-kxmlgui  (Requires: kf5-kwidgetsaddons)
+  * kf5-libgravatar  (Requires: kf5-kwidgetsaddons)
+  * kf5-libksane  (Requires: kf5-kwidgetsaddons)
+  * kf5-libksieve  (Requires: kf5-kwidgetsaddons)
+  * kf5-mailimporter  (Requires: kf5-kwidgetsaddons)
+  * kf5-messagelib  (Requires: kf5-kwidgetsaddons)
+  * kf5-plasma  (Requires: kf5-kwidgetsaddons)
+  * kwin  (Requires: kf5-kwidgetsaddons)
+  * okteta  (Requires: kf5-kwidgetsaddons)
+  * plasma-nm  (Requires: kf5-kwidgetsaddons)
+  * plasma-oxygen  (Requires: kf5-kwidgetsaddons)
+  * plasma-sdk  (Requires: kf5-kwidgetsaddons)
+* kf5-kwindowsystem (package added)
+  * kdevelop  (Requires: kf5-kwindowsystem)
+  * kf5-kactivities  (Requires: kf5-kwindowsystem)
+  * kf5-kcrash  (Requires: kf5-kwindowsystem)
+  * kf5-kdeclarative  (Requires: kf5-kwindowsystem)
+  * kf5-kdelibs4support  (Requires: kf5-kwindowsystem)
+  * kf5-kglobalaccel  (Requires: kf5-kwindowsystem)
+  * kf5-khtml  (Requires: kf5-kwindowsystem)
+  * kf5-kinit  (Requires: kf5-kwindowsystem)
+  * kf5-kio  (Requires: kf5-kwindowsystem)
+  * kf5-knotifications  (Requires: kf5-kwindowsystem)
+  * kf5-kontactinterface  (Requires: kf5-kwindowsystem)
+  * kf5-ktextwidgets  (Requires: kf5-kwindowsystem)
+  * kf5-kwallet  (Requires: kf5-kwindowsystem)
+  * kf5-kxmlgui  (Requires: kf5-kwindowsystem)
+  * kf5-libksieve  (Requires: kf5-kwindowsystem)
+  * kf5-plasma  (Requires: kf5-kwindowsystem)
+  * kwin  (Requires: kf5-kwindowsystem)
+  * libkgapi  (Requires: kf5-kwindowsystem)
+  * plasma-breeze  (Requires: kf5-kwindowsystem)
+  * plasma-nm  (Requires: kf5-kwindowsystem)
+  * plasma-oxygen  (Requires: kf5-kwindowsystem)
+  * plasma-sdk  (Requires: kf5-kwindowsystem)
+* libcanberra (package added)
+  * plasma-desktop  (Requires: libcanberra)
+* libgtop2 (package added)
+  * perl-GTop  (Requires: libgtop2)
+* libid3tag (package added)
+  * imlib2  (Requires: libid3tag)
+* libva (package added)
+* lklug-fonts (package added)
+  * publican  (Requires: lklug-fonts)
+* log4j (package added)
+* lz4-java (package added)
+* lzma-java (package added)
+* maven-injection-plugin (package added)
+* mvel (package added)
+  * lz4-java  (Requires: mvel)
+* netty (package added)
+  * jython  (Requires: netty)
+* nototools (package added)
+  * google-noto-emoji-fonts  (Requires: nototools)
+  * google-noto-emoji-fonts  (Requires: nototools)
+* openbox (package added)
+  * kf5-kwindowsystem  (Requires: openbox)
+* os-maven-plugin (package added)
+* pdfbox (package added)
+  * fop  (Requires: pdfbox)
+* perl-Any-URI-Escape (package added)
+* perl-B-Debug (package added)
+* perl-Browser-Open (package added)
+* perl-CGI-Application (package added)
+* perl-CGI-PSGI (package added)
+* perl-Config-Simple (package added)
+* perl-CSS (package added)
+* perl-CSS-Tiny (package added)
+* perl-DateTime-Format-DateParse (package added)
+* perl-Devel-Cover (package added)
+* perl-File-Inplace (package added)
+* perl-GTop (package added)
+* perl-HTML-FormatText-WithLinks (package added)
+* perl-HTML-FormatText-WithLinks-AndTables (package added)
+* perl-HTML-Template (package added)
+* perl-HTML-WikiConverter (package added)
+* perl-HTML-WikiConverter-Markdown (package added)
+* perl-IPC-SharedCache (package added)
+* perl-IPC-ShareLite (package added)
+* perl-Lingua-EN-Fathom (package added)
+* perl-Lingua-EN-Sentence (package added)
+* perl-Lingua-EN-Syllable (package added)
+* perl-Locale-Maketext (package added)
+* perl-Locale-Maketext-Gettext (package added)
+* perl-Locale-Maketext-Lexicon (package added)
+* perl-Locale-Msgfmt (package added)
+* perl-Locale-PO (package added)
+* perl-Parallel-Iterator (package added)
+* perl-PPI-HTML (package added)
+* perl-String-Similarity (package added)
+* perl-Syntax-Highlight-Engine-Kate (package added)
+* perl-Test-MockObject (package added)
+* perl-Text-Haml (package added)
+* perl-UNIVERSAL-can (package added)
+* perl-XML-Catalog (package added)
+* perl-XML-LibXSLT (package added)
+* perl-XML-TokeParser (package added)
+* perl-XML-TreeBuilder (package added)
+  * publican  (Requires: perl-XML-TreeBuilder)
+* perl-XML-Writer (package added)
+* pipewire (package added)
+  * weston  (Requires: pipewire)
+* pngquant (package added)
+  * google-noto-emoji-fonts  (Requires: pngquant)
+* polkit-qt-1 (package added)
+  * kf5-kauth  (Requires: polkit-qt-1)
+* publican (package added)
+  * pacemaker  (Requires: publican)
+* qt5-qtspeech (package added)
+* randomizedtesting (package added)
+  * lz4-java  (Requires: randomizedtesting)
+* rhino (package added)
+* shrinkwrap (package added)
+* simple-xml (package added)
+* startup-notification (package added)
+  * openbox  (Requires: startup-notification)
+* tomcat (package added)
+* tomcat-taglibs-parent (package added)
+* tomcat-taglibs-standard (package added)
+  * tomcat  (Requires: tomcat-taglibs-standard)
+* weston (package added)
+  * kf5-kwayland  (Requires: weston)
+  * kf5-kwindowsystem  (Requires: weston)
+* wsdl4j (package added)
+  * tomcat  (Requires: wsdl4j)
+* xmlgraphics-commons (package added)
+  * fop  (Requires: xmlgraphics-commons)
+* xstream (package added)
+* zopfli (package added)
+  * google-noto-emoji-fonts  (Requires: zopfli)
 # SOURCE DEPENDENCIES REMOVED
-* nodejs-eyes
-  * nodejs-vows
+* attica (package removed)
+  * kdelibs  (Removed, or no longer needs attica)
+* botan2 (package removed)
+  * qca  (Removed, or no longer needs botan2)
+* grantlee (package removed)
+  * kdelibs  (Removed, or no longer needs grantlee)
+* herqq (package removed)
+  * kdelibs  (Removed, or no longer needs herqq)
+* kdelibs (package removed)
+  * plasma-breeze  (Removed, or no longer needs kdelibs)
+  * subversion  (Removed, or no longer needs kdelibs)
+* kde-settings (package removed)
+  * kdelibs  (Removed, or no longer needs kde-settings)
+* pkcs11-helper (package removed)
+  * qca  (Removed, or no longer needs pkcs11-helper)
+* polkit-qt (package removed)
+  * kdelibs  (Removed, or no longer needs polkit-qt)
+* proj (package removed)
+  * qt-mobility  (Removed, or no longer needs proj)
+  * shapelib  (Removed, or no longer needs proj)
+* qca (package removed)
+  * kde-connect  (Removed, or no longer needs qca)
+  * kdelibs  (Removed, or no longer needs qca)
+  * kf5-libktorrent  (Removed, or no longer needs qca)
+  * okteta  (Removed, or no longer needs qca)
+  * plasma-nm  (Removed, or no longer needs qca)
+* qt-mobility (package removed)
+  * qtwebkit  (Removed, or no longer needs qt-mobility)
+* qtsoap (package removed)
+  * herqq  (Removed, or no longer needs qtsoap)
+* qtwebkit (package removed)
+  * kdelibs  (Removed, or no longer needs qtwebkit)

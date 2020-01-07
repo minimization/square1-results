@@ -1,1 +1,13 @@
-nodejs-eyes
+attica
+botan2
+grantlee
+herqq
+kdelibs
+kde-settings
+pkcs11-helper
+polkit-qt
+proj
+qca
+qt-mobility
+qtsoap
+qtwebkit
