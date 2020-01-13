@@ -1927,6 +1927,7 @@ perl-Test-LongString
 perl-Test-Manifest
 perl-Test-Memory-Cycle
 perl-Test-MinimumVersion
+perl-TestML
 perl-Test-MockModule
 perl-Test-MockObject
 perl-Test-MockRandom
