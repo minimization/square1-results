@@ -1,0 +1,7 @@
+amiri-fonts
+argyllcms
+cronie
+crontabs
+nethack
+python-crypto
+python-junitxml

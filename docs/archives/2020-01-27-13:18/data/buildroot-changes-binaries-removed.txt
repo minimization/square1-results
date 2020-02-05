@@ -1,0 +1,7 @@
+amiri-fonts
+amiri-fonts-common
+libtomcrypt
+nethack-bitmap-fonts
+python3-crypto
+python3-subunit
+subunit-filters

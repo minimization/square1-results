@@ -1,0 +1,12 @@
+ebtables-legacy
+ipset
+ocaml-compiler-libs
+ocaml-labltk
+ocaml-labltk-devel
+ocaml-ocamlbuild
+ocaml-ocamlbuild-devel
+ocaml-ocamldoc
+perl-Return-MultiLevel
+python3-ecdsa
+python3-firewall
+python3-pycryptodomex
